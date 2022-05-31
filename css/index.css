@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+body {
+    background-color: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+}
+
 .header {
     width: 100%;
     height: 3rem;
@@ -41,4 +49,341 @@
 .header2 img,
 .header3 img {
     width: 1.5rem;
+}
+
+/* 搜索框部分 */
+.sousuo {
+    width: 100%;
+    position: relative;
+}
+
+.sousuo img {
+    width: 100%;
+}
+
+.sousuo form {
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.sousuo form input {
+    width: 100%;
+    height: 3rem;
+    padding-left: 3rem;
+    box-sizing: border-box;
+    background: url(../image/index/seach.jpg) no-repeat .8rem .5rem;
+    border-radius: .5rem;
+    background-size: 1.7rem;
+    font-size: .9rem;
+    background-color: #fff;
+}
+
+.sousuo form input:focus {
+    outline: none;
+}
+
+.yewu {
+    width: 100%;
+    height: 10rem;
+    background-color: #FF8A00;
+}
+
+.yewu ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.yewu ul a {
+    width: 25%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.yewu ul a img {
+    width: 4.5rem;
+}
+
+.yewu ul a p {
+    margin-top: .5rem;
+}
+
+/* <!-- news图片 --> */
+.news {
+    width: 100%;
+    margin: 1rem 0;
+
+}
+
+.news img {
+    width: 100%;
+}
+
+/* 热门房源 */
+
+.hot {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.hot1 {
+    width: 100%;
+    height: 5rem;
+    background-color: #FF8A00;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    color: white;
+}
+
+.hot1 h5 {
+    margin-top: .2rem;
+}
+
+.hot .hot2 {
+    width: 100%;
+    padding: 1.5rem;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.hot2 li {
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    margin-top: 1.3rem;
+    border-bottom: 1px solid #FF2727;
+}
+
+.hot2 li img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.hot2_1 {
+    /* width: 60%; */
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+.hot2_1_1,
+.hot2_1_2,
+.hot2_1_3 {
+    margin-top: .7rem;
+}
+
+.hot2_1_1 span:nth-child(1) {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.hot2_1_1 span:nth-child(2) {
+    color: #FF8A00;
+    font-size: 1rem;
+    font-weight: 600;
+    float: right;
+}
+
+
+.hot2_1_2 span:nth-child(1) {
+    color: #999;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.hot2_1_2 span:nth-child(2) {
+    color: #999;
+    font-size: 1rem;
+    font-weight: 600;
+    float: right;
+}
+
+.hot2_1_3 a {
+    background-color: #F4F7F9;
+    text-decoration: none;
+    color: #849AB5;
+    padding: .3rem .4rem;
+}
+
+.hot2 li:last-child {
+    border-bottom: none;
+}
+
+/* 热门链接 */
+
+.d {
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    margin-top: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #FFD39E;
+}
+
+.d p {
+    color: #FF8A00;
+    font-size: 1.6rem;
+    width: 48%;
+    text-align: center;
+}
+
+.d p:nth-child(1) {
+    border-bottom: 1px solid #FF8A00;
+}
+
+.d p:nth-child(2) {
+    color: #666666;
+}
+
+.d1,
+.d2 {
+    width: 100%;
+    height: 14rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #666666;
+}
+
+.d1 ul,
+.d2 ul {
+    list-style: none;
+    text-align: center;
+}
+
+.d1 ul li,
+.d2 ul li {
+    float: left;
+    width: 45%;
+    height: 3rem;
+}
+
+.d2 {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    height: 12rem;
+    color: #969897;
+    background-color: #2F3130;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+
+}
+
+.footer1 {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-bottom: 1px solid #616262;
+}
+
+
+.footer1 a {
+    color: #969897;
+}
+
+.footer2 {
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+}
+
+.footer2_1 {
+    width: 45%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.footer2_1 img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.foooter2_2 p {
+    margin-left: .5rem;
+    font-size: .9rem;
+}
+
+.footer3 {
+    width: 100%;
+    text-align: center;
+    margin-top: .9rem;
+}
+
+.e {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    /* background-color: #7F7F7F;
+    opacity: .5; */
+    position: fixed;
+    bottom: 0;
+}
+
+.f {
+    width: 100%;
+    height: 4.5rem;
+    background-color: #7F7F7F;
+    opacity: .5;
+    position: fixed;
+    bottom: 0;
+}
+
+.e img:nth-child(2) {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 3rem;
+}
+
+.e img:nth-child(1) {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.e1 {
+    width: 40%;
+    color: white;
+}
+
+.e2 {
+    width: 35%;
+    float: right;
+    height: 100%;
+    background-color: #FF8A00;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    margin-top: .2rem;
+
 }
