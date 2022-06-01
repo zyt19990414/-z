@@ -150,4 +150,13 @@ inp4.onblur = function () {
 }
 
 
+// 验证并登陆
+var pass2_3_ = document.getElementsByClassName('pass2_3')[0].children;
+// console.log(pass2_3_);
+
+touch.on(pass2_3_, 'tap', function () {
+    // console.log(inp3.value);
+    setCookie('ipone', inp3.value);
+    // setCookie('pass_', inp2.value);
+})
 
