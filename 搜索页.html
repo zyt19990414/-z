@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="">
     <script src=""></script>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sousuo.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
@@ -16,10 +18,292 @@
     <div class="header">
         <div class="header1"><img src="./image/index/logo.jpg" alt=""></div>
         <div class="header4">
-            <div class="header2"><img src="./image/index/my.jpg" alt=""></div>
+            <div class="header2">
+                <a target="_blank" href="./dengluye.html"><img src="./image/index/my.jpg" alt=""></a>
+            </div>
             <div class="header3"><img src="./image/index/xiazai.jpg" alt=""></div>
         </div>
     </div>
+    <div class="input">
+        <input type="text" placeholder="请输入小区名或商圈名称" alue="" id="input">
+        <!-- <div class="line"></div> -->
+        <span class="line">|</span>
+        <a href="">
+            <img src="./image/SecondHandList/search_03.png" alt="">
+        </a>
+    </div>
+    <div class="main">
+        <div id="area_">区域<span id="area_"></span></div>
+        <div id="price_">价格<span id="price_"></span></div>
+        <div id="house_">房型<span id="house_"></span></div>
+        <div id="more_">更多<span></span></div>
+    </div>
+    <div class="mask" style="display: none;"></div>
+    <div class="one" style="display:none">
+        <div class="main active">
+            <div id="area_01" style="color:#ff8a00 ;">
+                区域
+                <span id="area" style="color:#ff8a00 ;border-top: 7px solid transparent;
+                    border-right: 7px solid transparent;
+                    border-bottom: 7px solid #ff8a00;
+                    border-left: 7px solid transparent;"></span>
+            </div>
+            <div id="price_01">价格<span id="price_01"></span></div>
+            <div id="house_01">房型<span id="house_01"></span></div>
+            <div id="more_01">更多<span id="more_01"></span></div>
+        </div>
+        <div class="title">
+            <h3>区域</h3>
+            <h3>地铁</h3>
+        </div>
+        <div class="hideList">
+            <ul>
+                <li>附近</li>
+                <li>不限</li>
+                <li style="color: #ff8a00;">朝阳</li>
+                <li>海淀</li>
+                <li>昌平</li>
+                <li>丰台</li>
+                <li>石景山</li>
+            </ul>
+            <ul>
+                <li style="color: #ff8a00;">不限</li>
+                <li>安贞</li>
+                <li>奥林匹克公园</li>
+                <li>百子湾</li>
+                <li>北工大</li>
+                <li>北苑</li>
+                <li>CBD</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="mask" style="display:none;"></div>
+    <div class="two" style="display: none;">
+        <div class="main active">
+            <div id="area_02">
+                区域
+                <span id="area_02"></span>
+            </div>
+            <div id="price_02" style="color:#ff8a00 ;">
+                价格
+                <span id="price" style="color:#ff8a00 ;border-top: 7px solid transparent;
+                    border-right: 7px solid transparent;
+                    border-bottom: 7px solid #ff8a00;
+                    border-left: 7px solid transparent;">
+                </span>
+            </div>
+            <div id="house_02">房型<span id="house_02"></span></div>
+            <div>更多<span></span></div>
+        </div>
+        <div class="priceContent">
+            <ul>
+                <li>不限</li>
+                <li>100万以下</li>
+                <li>100万-150万</li>
+                <li>150万-200万</li>
+                <li>200万-250万</li>
+                <li>250万-300万</li>
+                <li>自定义价格</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mask" style="display:none;"></div>
+    <div class="three" style="display: none;">
+        <div class="main active">
+            <div id="area_03">
+                区域
+                <span id="area_03"></span>
+            </div>
+            <div id="price_03">
+                价格
+                <span id="price_03">
+                </span>
+            </div>
+            <div id="house_03" style="color:#ff8a00 ;">房型<span id="house" style="color:#ff8a00 ;border-top: 7px solid transparent;
+                    border-right: 7px solid transparent;
+                    border-bottom: 7px solid #ff8a00;
+                    border-left: 7px solid transparent;"></span></div>
+            <div id="more_03">更多<span id="more_03"></span></div>
+        </div>
+        <div class="houseContent">
+            <ul>
+                <li>不限</li>
+                <li>1室<span></span></li>
+                <li>2室<span></span></li>
+                <li>3室<span></span></li>
+                <li>4室<span></span></li>
+                <li>5室<span></span></li>
+            </ul>
+            <button>确定</button>
+        </div>
+    </div>
+    <div class="mask" style="display:none;"></div>
+    <div class="four" style="display: none;">
+        <div class="main">
+            <div id="area_04">区域<span id="area_04"></span></div>
+            <div id="price_04">价格<span id="price_04"></span></div>
+            <div id="house_04">房型<span id="house_04"></span></div>
+            <div id="more_04" style="color:#ff8a00 ;">更多<span id="more" style="color:#ff8a00 ;border-top: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 7px solid #ff8a00;
+                border-left: 7px solid transparent;"></span></div>
+        </div>
+        <ul class="max">
+            <li>
+                <h3>区域</h3>
+                <ul class="childList">
+                    <li>南</li>
+                    <li>南北</li>
+                    <li>东</li>
+                    <li>西</li>
+                    <li>北</li>
+                </ul>
+            </li>
+            <li>
+                <h3>面积（平方）</h3>
+                <ul class="childList">
+                    <li>50以下</li>
+                    <li>50-70</li>
+                    <li>70-90</li>
+                    <li>90-110</li>
+                    <li>110-130</li>
+                    <li>130-150</li>
+                    <li>150-200</li>
+                    <li>200以上</li>
+                </ul>
+            </li>
+            <li>
+                <h3>标签</h3>
+                <ul class="childList">
+                    <li>学区房</li>
+                    <li>地铁房</li>
+                    <li>不限购</li>
+                    <li>满两年</li>
+                    <li>满五唯一</li>
+                    <li>降价</li>
+                    <li>新上</li>
+                    <li>独家</li>
+                    <li>有钥匙</li>
+                </ul>
+            </li>
+            <li>
+                <h3>楼龄</h3>
+                <ul class="childList">
+                    <li>5年以内</li>
+                    <li>10年以内</li>
+                    <li>10-20年</li>
+                    <li>20年以上</li>
+                </ul>
+            </li>
+            <li>
+                <h3>楼层</h3>
+                <ul class="childList">
+                    <li>低楼层</li>
+                    <li>中楼层</li>
+                    <li>高楼层</li>
+                </ul>
+            </li>
+            <li class="clear"><a href="#">清空条件</a></li>
+            <li class="btnOK"><a href="#">确定</a></li>
+        </ul>
+    </div>
+    <!-- <div class="more"> -->
+    <ul class="more">
+        <li>
+            <img src="./image/SecondHandList/img1.png" alt="">
+            <div>
+                <p>西便门外大街2室1厅89平</p>
+                <p>南北&nbsp;高楼层/6层</p>
+                <p>签约价格：13233元/平<span>1105万</span></p>
+                <p>签约日期：2015年11月10日</p>
+            </div>
+        </li>
+        <li>
+            <img src="./image/SecondHandList/img2.png" alt="">
+            <div>
+                <p>金桥国际&nbsp;1室1厅&nbsp;63平</p>
+                <p>南北&nbsp;高楼层/6层</p>
+                <p>签约价格：13244元/平<span>905万</span></p>
+                <p>签约日期：2015年11月10日</p>
+            </div>
+        </li>
+        <li>
+            <img src="./image/SecondHandList/img3.png" alt="">
+            <div>
+                <p>花涧溪二期&nbsp;2室2厅&nbsp;90平</p>
+                <p>南北&nbsp;高楼层/6层</p>
+                <p>签约价格：13244元/平<span>1322万</span></p>
+                <p>签约日期：2015年11月10日</p>
+            </div>
+        </li>
+    </ul>
+    <!-- </div> -->
+    <footer class="copyright">
+        <h2>北京找房无忧 ><a style="text-decoration: none;
+            color: #929b95;" target="_blank" href="./index.html">首页</a> </h2>
+
+        <div class="content">
+            <ul>
+                <li>
+                    <img src="image/index/apple.png" alt="" />
+                    <div>
+                        <p>iPhone</p>
+                        <p>客户端</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/index/android.png" alt="" />
+                    <div>
+                        <p>Android</p>
+                        <p>客户端</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="text">
+                <p>北京找房无忧房地产经纪公司</p>
+                <p>网络经营许可证京ICP备20160812号</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
+<script src="./js/sousuo.js">
+    // // var top = document.getElementsByClassName('active')
+    // // var main = document.getElementsByClassName('main')[0]
+    // // top.onclick = function () {
+    // //     main.style.display = 'block';
+    // //     main.style.position = 'fixed';
+    // //     main.style.top = 0;
+
+    // // }
+    // var area = document.getElementById('area')
+    // var one = document.getElementsByClassName('one')[0]
+    // var mask = document.getElementsByClassName('mask')[0]
+    // var area_ = document.getElementById('area_')
+    // area_.onclick = function () {
+    //     one.style.display = 'block';
+    //     mask.style.display = 'block';
+    // }
+    // area.onclick = function () {
+    //     one.style.display = 'none';
+    //     mask.style.display = 'none';
+    // }
+    // mask.onclick = function () {
+    //     one.style.display = 'none';
+    //     mask.style.display = 'none';
+    //     two.style.display = 'none'
+    // }
+    // var price = document.getElementById('price')
+    // var price_ = document.getElementById('price_')
+    // var two = document.getElementsByClassName('two')[0]
+    // price_.onclick = function () {
+    //     two.style.display = 'block'
+    //     mask.style.display = 'block'
+    // }
+    // price.onclick = function () {
+    //     two.style.display = 'none'
+    //     mask.style.display = 'none'
+    // }
+</script>

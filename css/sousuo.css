@@ -1,0 +1,442 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    text-indent: 2em;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+#input {
+    width: 80%;
+    height: 3rem;
+    /* background: url(../image/SecondHandList/search_03.png) no-repeat 19rem .5rem; */
+    background-size: 1.6rem;
+    background-color: white;
+    text-indent: 1em;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid gainsboro;
+}
+
+.line {
+    /* width: .1rem;
+    height: 1.5rem;
+    background-color: black; */
+    position: absolute;
+    top: .5rem;
+    right: 7rem;
+}
+
+.input>a {
+    position: absolute;
+    top: .7rem;
+    right: 3rem;
+
+}
+
+.input>a>img {
+    width: 30%;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #666666;
+    margin-top: 1rem;
+    border-top: .1rem solid rgb(201, 195, 195);
+    border-bottom: .1rem solid rgb(201, 195, 195);
+}
+
+.main>div {
+    position: relative;
+}
+
+.main>div>span:nth-last-of-type(1),
+.main>div>span:nth-last-of-type(2),
+.main>div>span:nth-last-of-type(3),
+.main>div>span:nth-last-of-type(4) {
+    border-top: 7px solid #ccc;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.main>div>span:nth-last-of-type(1) {
+    position: absolute;
+    top: .2rem;
+    left: 3.5rem;
+}
+
+.more {
+    margin: 0px auto;
+    margin-top: 1rem;
+    width: 90%;
+    list-style: none;
+}
+
+.more>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid orange;
+}
+
+.more>li>img {
+    /* display: inline-block; */
+    width: 7rem;
+    height: 7rem;
+}
+
+.more>li>div {
+    height: 7rem;
+}
+
+.more>li>div>p:nth-of-type(1) {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.more>li>div>p:nth-of-type(2) {
+    margin-top: 1.5rem;
+}
+
+.more>li>div>p:nth-of-type(3),
+.more>li>div>p:nth-of-type(4) {
+    color: #b0b0b0;
+}
+
+.more>li:nth-of-type(3) {
+    border-bottom: none;
+}
+
+.more>li>div>p>span {
+    font-weight: 900;
+    color: #ff8300;
+}
+
+.one {
+    position: fixed;
+    width: 100%;
+    height: 30rem;
+    /* height: 50rem; */
+    background-color: white;
+    top: -1rem;
+    /* display: none; */
+    z-index: 3;
+}
+
+.active {
+    border-bottom: none;
+}
+
+.title {
+    /* background: blue; */
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    font-size: 1.4rem;
+    width: 33%;
+    flex: 1;
+    text-align: center;
+    /* height: 20rem; */
+    /* background-color: #f0f0f0; */
+    /* text-indent: 2.05em; */
+    /* border-right: 1px solid #ccc; */
+    /* padding: 1rem 0;
+    overflow: hidden; */
+    float: left;
+}
+
+/* .title>h3 {
+    margin: 1rem 0;
+} */
+
+.title>h3:nth-of-type(1) {
+    color: #ff8300;
+    background-color: white;
+    height: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    /* margin-left: 2rem; */
+    /* display: inline-block; */
+    /* width: 100%; */
+    /* border-right: 1px solid white; */
+}
+
+.title>h3:nth-of-type(2) {
+    /* margin-top: 1rem; */
+    padding: .5rem 0;
+    height: 20.9rem;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+}
+
+/* .hideList { */
+/* float: left; */
+
+/* } */
+
+.hideList>ul:nth-of-type(1) {
+    list-style: none;
+    float: left;
+    width: 50%;
+    flex: 3;
+}
+
+.hideList>ul>li {
+    /* float: left; */
+    width: 50%;
+    text-align: center;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    /* float: left; */
+}
+
+.hideList>ul:nth-of-type(2)>li {
+    width: 50%;
+    text-align: center;
+    height: 3.8rem;
+    line-height: 3.8rem;
+}
+
+.hideList>ul:nth-of-type(2) {
+    /* float: left; */
+    list-style: none;
+    position: absolute;
+    top: 4.25rem;
+    right: -6rem;
+    width: 50%;
+    flex: 1;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.two {
+    position: fixed;
+    width: 100%;
+    height: 30rem;
+    /* height: 50rem; */
+    background-color: white;
+    top: -1rem;
+    /* display: none; */
+    z-index: 3;
+}
+
+.priceContent {
+    width: 100%;
+}
+
+.priceContent>ul {
+    list-style: none;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.priceContent>ul>li {
+    height: 3.65rem;
+    line-height: 3.65rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.priceContent>ul>li:nth-last-of-type(1) {
+    border: none;
+}
+
+.three {
+    position: fixed;
+    width: 100%;
+    height: 30rem;
+    /* height: 50rem; */
+    background-color: white;
+    top: -1rem;
+    /* display: none; */
+    z-index: 3;
+}
+
+.houseContent {
+    width: 100%;
+}
+
+.houseContent>ul {
+    list-style: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.houseContent>ul>li {
+    height: 3.2rem;
+    line-height: 3.2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.houseContent>ul>li>span {
+    /* position: relative;
+    top: .5rem;
+    left: 20rem; */
+    float: right;
+    margin-top: .85rem;
+    margin-right: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #c5c3c3;
+}
+
+.houseContent>ul>li:nth-of-type(3)>span {
+    border: 1px solid #ff8a00;
+    background: url(../image/SecondHandList/ok.png) center center no-repeat
+}
+
+.houseContent>ul>li:nth-of-type(6) {
+    border-bottom: none;
+}
+
+.houseContent>button {
+    width: 90%;
+    height: 4rem;
+    display: block;
+    margin: 0rem auto;
+    border: none;
+    background-color: #ff8300;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.four {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* height: 50rem; */
+    background-color: white;
+    top: -1rem;
+    /* display: none; */
+    z-index: 3;
+}
+
+
+
+.max {
+    position: absolute;
+    top: -3rem;
+    left: 3rem;
+    list-style: none;
+    width: 78%;
+    /* height: 100%; */
+    /* background-color: aqua; */
+    clear: both;
+
+}
+
+.max>li {
+    width: 100%;
+}
+
+.four>.max>li>h3 {
+    margin-top: 8rem;
+    /* height: 3rem; */
+    font-size: 1.4rem;
+}
+
+.four>.max>li>.childList {
+    width: 90%;
+    height: 100%;
+    clear: both;
+    background-color: aqua;
+}
+
+.four>.max>li>.childList>li {
+    float: left;
+    list-style: none;
+    border: 1px solid #cccccc;
+    margin: 0rem .1rem;
+    width: 5rem;
+    height: 2rem;
+    padding: .5rem .5rem .5rem .5rem;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: .8rem;
+}
+
+.clear {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.clear>a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.btnOK {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background: #ff8a00;
+}
+
+.btnOK>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* .copyright {
+    background-color: #2e3130;
+    color: #939494;
+    padding: 0rem 1.5rem;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.copyright>h2 {
+    height: 4rem;
+    line-height: 4rem;
+    border-bottom: 1px solid #3e403f;
+}
+
+.copyright>.content>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.copyright>.content>ul>li {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+.copyright>.content>ul>li>img {
+    width: 1.8rem;
+    height: 2rem;
+    padding: 0rem 1rem;
+} */
