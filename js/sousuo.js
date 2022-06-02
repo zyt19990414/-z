@@ -51,8 +51,7 @@ more_01.onclick = function () {
     two.style.display = 'none'
     three.style.display = 'none'
     four.style.display = 'block'
-    mask.style.display = 'block'
-
+    mask.style.display = 'none'
 }
 var price = document.getElementById('price')
 var price_ = document.getElementById('price_')
@@ -60,6 +59,7 @@ var two = document.getElementsByClassName('two')[0]
 var area_02 = document.getElementById('area_02')
 var house_02 = document.getElementById('house_02')
 var price_02 = document.getElementById('price_02')
+var more_02 = document.getElementById('more_02')
 price_.onclick = function () {
     two.style.display = 'block'
     mask.style.display = 'block'
@@ -81,6 +81,13 @@ house_02.onclick = function () {
     three.style.display = 'block'
     four.style.display = 'none'
     mask.style.display = 'block'
+}
+more_02.onclick = function () {
+    one.style.display = 'none';
+    two.style.display = 'none';
+    three.style.display = 'none'
+    four.style.display = 'block';
+    mask.style.display = 'blcok';
 }
 var house = document.getElementById('house')
 var three = document.getElementsByClassName('three')[0]
@@ -124,39 +131,33 @@ var price_04 = document.getElementById('price_04')
 var house_04 = document.getElementById('house_04')
 var more_04 = document.getElementById('more_04')
 var more_ = document.getElementById('more_')
+// console.log(area_04);
 more_.onclick = function () {
-    four.style.display = 'block'
+    four.style.display = 'block';
+    mask.style.display = 'block'
 }
 more.onclick = function () {
-    four.style.display = 'none'
-    mask.style.display = 'none'
+    four.style.display = 'none';
+    mask.style.display = 'none';
 }
-// console.log(more);
 area_04.onclick = function () {
-    one.style.display = 'block'
-    two.style.display = 'none'
+    one.style.display = 'block';
+    two.style.display = 'none';
     three.style.display = 'none'
-    four.style.display = 'none'
-    mask.style.display = 'blcok'
+    four.style.display = 'none';
+    mask.style.display = 'blcok';
 }
 price_04.onclick = function () {
+    one.style.display = 'none';
+    two.style.display = 'block';
     three.style.display = 'none'
-    two.style.display = 'block'
-    one.style.display = 'none'
-    four.style.display = 'none'
-    mask.style.display = 'block'
+    four.style.display = 'none';
+    mask.style.display = 'blcok';
 }
 house_04.onclick = function () {
-    one.style.display = 'none'
-    two.style.display = 'none'
-    three.style.display = 'block'
-    four.style.display = 'none'
-    mask.style.display = 'none'
-}
-more_04.onclick = function () {
-    one.style.display = 'none'
-    two.style.display = 'none'
-    three.style.display = 'none'
-    four.style.display = 'block'
-    mask.style.display = 'block'
+    one.style.display = 'none';
+    two.style.display = 'none';
+    three.style.display = 'block';
+    four.style.display = 'none';
+    mask.style.display = 'blcok';
 }
